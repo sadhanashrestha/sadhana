@@ -1,1 +1,114 @@
-<h1> Hey KIC people </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothes Shopping</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      color: #333;
+    }
+    header {
+      background: #ff6f61;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #ff9a76;
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 10px;
+      color: #ff6f61;
+    }
+    .card p {
+      margin: 10px;
+      font-size: 14px;
+    }
+    footer {
+      background: #ff6f61;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fashion Hub</h1>
+    <p>Your colorful shopping destination!</p>
+  </header>
+
+  <nav>
+    <a href="#">Male</a>
+    <a href="#">Female</a>
+    <a href="#">T-Shirts</a>
+    <a href="#">Shoes</a>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Male+Clothes" alt="Male Clothes">
+      <h3>Men's Collection</h3>
+      <p>Stylish shirts, pants, and jackets for men.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Female+Clothes" alt="Female Clothes">
+      <h3>Women's Collection</h3>
+      <p>Trendy dresses, tops, and skirts for women.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=T-Shirts" alt="T-Shirts">
+      <h3>T-Shirts</h3>
+      <p>Comfortable and colorful T-shirts for all.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Shoes" alt="Shoes">
+      <h3>Shoes</h3>
+      <p>Sporty, casual, and formal shoes to match your style.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Fashion Hub | Designed with ❤️</p>
+  </footer>
+</body>
+</html>
+
